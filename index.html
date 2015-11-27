@@ -61,29 +61,53 @@ body {
   position: absolute;
   width: 20px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -20px;
   top: 110px;
 }
 .char1 {
-  transform: rotate(-36deg);
+  transform: rotate(-40deg);
 }
 .char2 {
-  transform: rotate(-24deg);
+  transform: rotate(-32deg);
 }
 .char3 {
-  transform: rotate(-12deg);
+  transform: rotate(-24deg);
 }
 .char4 {
-  transform: rotate(0deg);
+  transform: rotate(-18deg);
 }
 .char5 {
-  transform: rotate(12deg);
+  transform: rotate(-13deg);
 }
 .char6 {
-  transform: rotate(24deg);
+  transform: rotate(-5.5deg);
 }
 .char7 {
-  transform: rotate(36deg);
+  transform: rotate(2deg);
+}
+.char8{
+  transform: rotate(8.5deg);
+}
+.char9 {
+  transform: rotate(14.2deg);
+}
+.char10 {
+  transform: rotate(20.2deg);
+}
+.char11 {
+  transform: rotate(27deg);
+}
+.char12 {
+  transform: rotate(33deg);
+}
+.char13 {
+  transform: rotate(39.3deg);
+}
+.char14 {
+  transform: rotate(46deg);
+}
+.char15 {
+  transform: rotate(52deg);
 }
 
 #bottom span {
@@ -138,6 +162,56 @@ body {
   margin-top: -110px;
 }
 
+.heart {
+  animation: HEARTBEAT 2.5s infinite;
+}
+.top span {
+  animation: BOUNCE 2.5s infinite;
+}
+
+@keyframes HEARTBEAT {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.3);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes BOUNCE {
+  0% {
+    top: 110px;
+  }
+  10% {
+    top: 80px
+  }
+  15% {
+    top: 85px;
+  }
+  20% {
+    top: 70px;
+  }
+  75% {
+    top: 110px;
+  }
+  100% {
+    top: 110px;
+  }
+}
+
+
+
 
     </style>
 
@@ -153,9 +227,9 @@ body {
   <div class="home">
     <div class="heart">
     </div>
-    <div class="top">Our Anniversary</div>
+    <div id="top">Our Anniversary</div>
     <div class="name">Miel</div>
-    <div class="bottom">With love</div>
+    <div id="bottom">With love</div>
   </div>
 </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
