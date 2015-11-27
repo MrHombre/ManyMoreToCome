@@ -38,6 +38,56 @@ body {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjE3M3B4IiBoZWlnaHQ9IjE1OHB4IiB2aWV3Qm94PSIwIDAgMTczIDE1OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTczIDE1OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjRUY0NjU3IiBkPSJNMTU3LjMzMSwxNS41MDRjLTE5LjU1OS0xOS41NTktNTEuMjcxLTE5LjU1OS03MC44MzEsMGMtMTkuNTU5LTE5LjU1OS01MS4yNzEtMTkuNTU5LTcwLjgzMSwwDQoJYy0xOS41NTksMTkuNTU5LTE5LjU1OSw1MS4yNzEsMCw3MC44MzFsNzAuODMxLDcwLjgzbDcwLjgzMS03MC44M0MxNzYuODksNjYuNzc1LDE3Ni44OSwzNS4wNjQsMTU3LjMzMSwxNS41MDR6Ii8+DQo8L3N2Zz4=");
 }
 
+.home {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: bold;
+  font-size: 2.0em;
+  text-transform: uppercase;
+  position: center; /* This may have to change too relative */
+  z-index: 1;
+  width: 512px;
+  height: 512px;
+  color: #FFF;
+}
+
+#top {
+  width: 200px;
+  margin: auto;
+  position: relative;
+}
+
+#top span {
+  height: 350px;
+  position: absolute;
+  width: 20px;
+  left: 50%;
+  margin-left: -10px;
+  top: 110px;
+}
+
+.char1 {
+  transform: rotate(-36deg);
+}
+.char2 {
+  transform: rotate(-24deg);
+}
+.char3 {
+  transform: rotate(-12deg);
+}
+.char4 {
+  transform: rotate(0deg);
+}
+.char5 {
+  transform: rotate(12deg);
+}
+.char6 {
+  transform: rotate(24deg);
+}
+.char7 {
+  transform: rotate(36deg);
+}
+
+
     </style>
 
       <script src="js/prefixfree.min.js"></script>
@@ -49,7 +99,7 @@ body {
   <body>
 
     <div class="container bg">
-  <div class="hometown">
+  <div class="home">
     <div class="heart">
     </div>
     <div class="top">Our Anniversary</div>
