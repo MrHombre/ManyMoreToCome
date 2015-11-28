@@ -5,6 +5,12 @@
     <title>LOVE</title>
 
 
+    <link rel="stylesheet" href="css/reset.css">
+
+
+        <link rel="stylesheet" href="css/style.css">
+
+
 
     <style>
       /* NOTE: Prefixfree man you know the drill gots to be inline so it can acces the style. If they are on your local disk! */
@@ -12,7 +18,8 @@
       @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
 
-body {
+html, body {
+  height: 100%;
   background-color: #ccc;
 }
 
@@ -24,7 +31,7 @@ body {
   margin-top: -80px;
 }
 
-.heart {
+.heart1 {
   z-index: 1;
   width: 150px;
   height: 150px;
@@ -162,10 +169,10 @@ body {
   margin-top: -110px;
 }
 
-.heart {
+.heart1 {
   animation: HEARTBEAT 2.5s infinite;
 }
-.top span {
+#top span {
   animation: BOUNCE 2.5s infinite;
 }
 
@@ -223,9 +230,12 @@ body {
 
   <body>
 
+    <div class="bg_heart">
+</div>
+
     <div class="container bg">
   <div class="home">
-    <div class="heart">
+    <div class="heart1">
     </div>
     <div id="top">Our Anniversary</div>
     <div class="name">Miel</div>
