@@ -1,7 +1,4 @@
 # Anniversary project
 
 ## To Do
-
-  + Add scrolling Hearts background.
-
-  + Cursive Handwriting with Raphael.js 
+  + completely change the whole Anniversary Idea want to mess with more javascript and get a particle effect.
